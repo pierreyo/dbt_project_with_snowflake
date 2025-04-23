@@ -1,14 +1,14 @@
- ELT Pipeline with dbt & Snowflake
+# ELT Pipeline with dbt & Snowflake
 This project is a guided code-along for building a complete ELT (Extract, Load, Transform) pipeline using dbt and Snowflake, based on the "Code Along - Build an ELT Pipeline in 1 Hour" tutorial. Airflow integration is not included in this version.
 
-🧱 Tech Stack
+# 🧱 Tech Stack
 dbt (data build tool) – for data transformations
 
 Snowflake – for data warehouse and storage
 
 SQL – for all data modeling and transformation logic
 
-📦 Project Structure
+# 📦 Project Structure
 bash
 Copy
 Edit
@@ -28,7 +28,7 @@ Edit
 │   ├── fct_orders_discount.sql
 │   └── fct_orders_date_valid.sql
 └── dbt_project.yml         # dbt project configuration
-🛠️ Setup Instructions
+# 🛠️ Setup Instructions
 1. Snowflake Environment Setup
 Use the following SQL commands in Snowflake to set up the environment:
 
@@ -75,7 +75,7 @@ Transformations: Generate intermediate and fact tables
 
 Tests: Add generic and custom tests to validate data quality
 
-✅ dbt Workflow
+# ✅ dbt Workflow
 To run your transformations and tests:
 
 bash
@@ -87,7 +87,7 @@ dbt run                 # Execute models
 dbt test                # Run data quality tests
 dbt docs generate       # Generate documentation
 dbt docs serve          # View docs in browser
-🧪 Tests Included
+# 🧪 Tests Included
 Generic Tests: Uniqueness, not null, relationships, accepted values
 
 Singular Tests: Business logic validations for discounts and valid order dates
