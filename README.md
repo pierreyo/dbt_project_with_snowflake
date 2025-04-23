@@ -29,7 +29,7 @@ Edit
 │   └── fct_orders_date_valid.sql
 └── dbt_project.yml         # dbt project configuration
 # 🛠️ Setup Instructions
-1. Snowflake Environment Setup
+# # 1. Snowflake Environment Setup
 Use the following SQL commands in Snowflake to set up the environment:
 
 sql
@@ -47,7 +47,7 @@ grant all on database dbt_db to role dbt_role;
 
 use role dbt_role;
 create schema if not exists dbt_db.dbt_schema;
-2. Configure profiles.yml
+## 2. Configure profiles.yml
 Example profiles.yml:
 
 yaml
@@ -66,7 +66,7 @@ snowflake_workshop:
       warehouse: dbt_wh
       schema: dbt_schema
       threads: 1
-3. Add Models
+# # 3. Add Models
 Sources & Staging: Define orders and lineitem from Snowflake sample data
 
 Macros: Create a utility function to calculate discounts
